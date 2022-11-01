@@ -1,2 +1,2 @@
 cd "/home/boss/SharpIDE Projects/"
-dotnet sln "/home/boss/SharpIDE Projects//rt/rt.sln" add "/home/boss/SharpIDE Projects//rt//rt/rt.csproj"
+dotnet sln "/home/boss/SharpIDE Projects//a/a.sln" add "/home/boss/SharpIDE Projects//a//a/a.csproj"

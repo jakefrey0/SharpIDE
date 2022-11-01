@@ -110,3 +110,5 @@
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Mac/obj/Debug/net461/SharpIDE.Mac.csproj.CopyComplete
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Mac/obj/Debug/net461/SharpIDE.Mac.exe
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Mac/obj/Debug/net461/SharpIDE.Mac.pdb
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Mac/bin/Debug/net461/Scintilla.Eto.Shared.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Mac/bin/Debug/net461/Scintilla.Eto.Shared.pdb

@@ -10,7 +10,8 @@
       "SharpIDE/1.0.0": {
         "dependencies": {
           "Eto.Forms": "2.7.1",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "Scintilla.Eto.Shared": "1.0.0.0"
         },
         "runtime": {
           "SharpIDE.dll": {}
@@ -38,6 +39,14 @@
           "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {
             "assemblyVersion": "4.2.1.0",
             "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "Scintilla.Eto.Shared/1.0.0.0": {
+        "runtime": {
+          "Scintilla.Eto.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -76,6 +85,11 @@
       "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
       "path": "system.componentmodel.annotations/5.0.0",
       "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    },
+    "Scintilla.Eto.Shared/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

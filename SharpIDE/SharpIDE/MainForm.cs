@@ -4,6 +4,7 @@ using Eto.Forms;
 using Eto.Drawing;
 using System.Linq;
 using System.Reflection;
+using Eto.Forms.Controls.Scintilla.Shared;
 
 namespace SharpIDE {
 	public partial class MainForm : Form {
@@ -70,8 +71,8 @@ namespace SharpIDE {
 			PixelLayout ps=new PixelLayout();
 			TreeGridItemCollection col=new TreeGridItemCollection();
 			filesTreeView=new TreeGridView(){Width=300,Height=this.Height-200};
-			filesTreeView.Columns.Add(new GridColumn(){DataCell=new ImageViewCell(0){},Editable=false,Resizable=false,Sortable=false,Width=34});
-			filesTreeView.Columns.Add(new GridColumn(){DataCell=new TextBoxCell(1),HeaderText="File Name",Editable=false,Resizable=false,Sortable=false});
+			filesTreeView.Columns.Add(new GridColumn(){DataCell=new ImageViewCell(0){},Editable=false,Resizable=false});
+			filesTreeView.Columns.Add(new GridColumn(){DataCell=new TextBoxCell(1),HeaderText="File Name",Editable=false,Resizable=false});
 			Assembly asm=Assembly.GetExecutingAssembly();
 			String dirName=Path.GetDirectoryName(projectSlnOrCsprojPath),asmName=asm.GetName().Name;
 			FillTreeView(dirName,asmName,col,asm);
@@ -80,41 +81,74 @@ namespace SharpIDE {
 			projectTabCtrl=new TabControl(){Size=new Size(this.Width-500,this.Height-200)};
 			ps.Add(projectTabCtrl,304,33);
 			loadedProjectPath=Path.GetDirectoryName(projectSlnOrCsprojPath);
-			filesTreeView.SelectionChanged+=delegate { 
-				if (filesTreeView.SelectedItem==null)
-					filesTreeView.SelectedItem=col.Last(); // this is the fault of eto, it does not make any sense that the selection could have been changed yet is null but it happens anyway. This is a fix though it is ugly
-				OpenFileWithinProject(((TreeGridItem)filesTreeView.SelectedItem).Tag.ToString()); 
-			};
 			
 			filesTreeView.CellClick+=delegate(object sender, GridCellMouseEventArgs args) {
+				if (args.Buttons==MouseButtons.Primary) {
+					OpenFileWithinProject(((TreeGridItem)args.Item).Tag.ToString()); 
+					return;
+				}
 				if (args.Buttons!=MouseButtons.Alternate) return;
+				String tag=((TreeGridItem)args.Item).Tag.ToString();
 				// Right click:
-				Command delete=new Command(){MenuText="Delete file"};
+				Command delete=new Command(){MenuText="Delete"};
 				delete.Executed+=delegate {
-					if (MessageBox.Show("Are you sure you want to delete this file? It may not be recoverable.",MessageBoxButtons.YesNo)!=DialogResult.Yes)
+					if (MessageBox.Show("Are you sure you want to delete this file or directory? It may not be recoverable.",MessageBoxButtons.YesNo)!=DialogResult.Yes)
 						return; // < Pressed no or exited out some other way (X button? Alt+f4?)
 					// User pressed yes:
 					try {
-						String tag=((TreeGridItem)args.Item).Tag.ToString();
-						File.Delete(tag);
-						
-						col.Remove((TreeGridItem)args.Item);
+						if (!File.Exists(tag)) {
+							if (Directory.Exists(tag))
+								Directory.Delete(tag,true);
+							else if (MessageBox.Show("This file/directory appears to not exist. Should it be removed from the list?",MessageBoxButtons.YesNo)!=DialogResult.Yes)
+								return;
+						}
+						else File.Delete(tag);
+						try { ((TreeGridItem)((TreeGridItem)args.Item).Parent).Children.Remove((TreeGridItem)args.Item); }
+						catch (NullReferenceException) { col.Remove(col.Last()); /* issue with eto not detecting last item again */ }
 						filesTreeView.ReloadData();
 						if (projectTabCtrl.Pages.Any(x=>x.ID==tag))
 							CloseFileWithinProject(tag);
 					}
-					catch (IOException) { MessageBox.Show("The file is in use.","Failure"); }
-					catch (UnauthorizedAccessException) { MessageBox.Show(name+" does not have permission to remove this file","Failure" ); }
+					catch (IOException) { MessageBox.Show("The file/directory is in use.","Failure"); }
+					catch (UnauthorizedAccessException) { MessageBox.Show(name+" does not have permission to remove this file/directory","Failure" ); }
 					catch (Exception ex) { MessageBox.Show(ex.Message,"Failure"); }
 					
 				};
+				Command rename=new Command(){MenuText="Rename"};
 				
-				new ContextMenu() {Items={delete}}.Show();
+				Command copy=new Command(){MenuText="Copy"};
+				
+				Command edit=new Command(){MenuText="Edit"};
+				edit.Executed+=delegate {
+					if (!File.Exists(tag))
+						MessageBox.Show("This file does not appear to exist","Failure");
+					else
+						OpenFileWithinProject(tag);
+				};
+				
+				Command openInMgr=new Command(){MenuText="Open in file manager"};
+				openInMgr.Executed+=delegate {
+					if (!File.Exists(tag)&&!Directory.Exists(tag))
+						MessageBox.Show("This file or directory does not appear to exist");
+					else NewProjectForm.WriteThenRun(Environment.CurrentDirectory+"/fmgr_script","xdg-open \""+Path.GetDirectoryName(tag)+'"');
+				};
+				
+				Command openExternal=new Command(){MenuText="Open externally"};
+				openExternal.Executed+=delegate {
+					if (!File.Exists(tag))
+						MessageBox.Show("This file or directory does not appear to exist");
+					else NewProjectForm.WriteThenRun(Environment.CurrentDirectory+"/fmgr_script","xdg-open \""+tag+'"');
+				};
+				
+				if (Directory.Exists(tag))
+					new ContextMenu() {Items={rename,copy,delete,openInMgr}}.Show();
+				else
+					new ContextMenu() {Items={edit,rename,copy,delete,openExternal,openInMgr}}.Show();
 				
 			};
 			Content=ps;
 		}
-
+	
 		private void FillTreeView (String dirName,String asmName,TreeGridItemCollection col,Assembly asm,Boolean expand=true) {
 			foreach (String s in Directory.GetDirectories(dirName).Select(x=>x.Split(new []{'/','\\'}).Last())) {
 				TreeGridItem item=new TreeGridItem(2){Values=new Object[]{new Bitmap(asm.GetManifestResourceStream(asmName+".Resources.Folder.bmp")),s},Expanded=expand,Tag=dirName+'/'+s};
@@ -148,7 +182,8 @@ namespace SharpIDE {
 			page.Text=fileName.Split(new Char[]{'\\','/'}).Last();
 			PixelLayout ps=new PixelLayout();
 			RichTextArea rtb=new RichTextArea(){Width=projectTabCtrl.Width-8,Height=projectTabCtrl.Height-100};
-			ps.Add(rtb,2,52);
+			ScintillaControl sc=new ScintillaControl(){Width=projectTabCtrl.Width-8,Height=projectTabCtrl.Height-100};
+			ps.Add(sc,2,52);
 			//TODO:: Move these buttons to a contextmenu on tab right click, Eto doesn't have enough support right now to accomplish this
 			Button closeBtn=new Button(){Text="Close this tab"},closeToLeftBtn=new Button(){Text="Close tabs to the left"},closeToRightBtn=new Button(){Text="Close tabs to the right"},closeAllButThisBtn=new Button(){Text="Close all other tabs"};
 			closeBtn.Click+=delegate { CloseFileWithinProject(projectTabCtrl.SelectedIndex); };

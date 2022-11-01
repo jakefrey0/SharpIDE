@@ -99,7 +99,7 @@ namespace SharpIDE {
 
         }
 
-        private String RunBatchOrBashFile (String path) {
+        internal static String RunBatchOrBashFile (String path) {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) {
                 //TODO::OSX
                 return String.Empty;
@@ -116,7 +116,7 @@ namespace SharpIDE {
             return str;
         }
 
-        private String WriteThenRun (String path, String data) {
+        internal static String WriteThenRun (String path, String data) {
             File.WriteAllText(path,data);
             return RunBatchOrBashFile(path);
         }

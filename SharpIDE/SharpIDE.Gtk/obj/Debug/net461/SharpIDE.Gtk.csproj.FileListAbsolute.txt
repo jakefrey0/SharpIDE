@@ -116,3 +116,7 @@
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/obj/Debug/net461/SharpIDE.Gtk.csproj.CopyComplete
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/obj/Debug/net461/SharpIDE.Gtk.exe
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/obj/Debug/net461/SharpIDE.Gtk.pdb
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.Shared.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.GTK.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.GTK.pdb
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/libscintilla.so

@@ -10,3 +10,6 @@
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.pdb
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.resources.resources
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.csproj.GenerateResource.cache
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.csproj.CopyComplete
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/bin/Debug/netstandard2.0/Scintilla.Eto.Shared.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/bin/Debug/netstandard2.0/Scintilla.Eto.Shared.pdb

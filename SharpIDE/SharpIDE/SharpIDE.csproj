@@ -31,4 +31,10 @@
       </Compile>
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Scintilla.Eto.Shared">
+        <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\bin\Debug\Scintilla.Eto.Shared.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>

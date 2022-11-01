@@ -1,6 +1,8 @@
 ﻿using System;
 using Eto.Forms;
 using System.IO;
+using Eto.Forms.Controls.Scintilla.Shared;
+using Eto.Forms.Controls.Scintilla.GTK;
 
 namespace SharpIDE.Gtk {
     class Program {
@@ -18,7 +20,8 @@ namespace SharpIDE.Gtk {
                 Console.WriteLine("Expected 1 or 0 arguments");
                 Environment.Exit(0);
             }
-            Eto.Platform plat=new Eto.GtkSharp.Platform();
+            Eto.GtkSharp.Platform plat=new Eto.GtkSharp.Platform();
+            plat.Add<ScintillaControl.IScintillaControl>(()=>new ScintillaControlHandler());
             new Application(plat).Run(new MainForm(projectPath));
         }
     }
