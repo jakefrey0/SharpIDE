@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "RkLPFui19MTkUCAbpREfb14uB/JgiEEM2n8bznGblaa+Z4Pc7qDPdM7Ar6ThoOMZ/BlZBJNQTnyeboM6UYXdTg==",
+  "success": true,
+  "projectFilePath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/SharpIDE.Wpf.csproj",
+  "expectedPackageFiles": [
+    "/home/boss/.nuget/packages/eto.forms/2.7.1/eto.forms.2.7.1.nupkg.sha512",
+    "/home/boss/.nuget/packages/eto.platform.wpf/2.7.1/eto.platform.wpf.2.7.1.nupkg.sha512",
+    "/home/boss/.nuget/packages/extended.wpf.toolkit/3.6.0/extended.wpf.toolkit.3.6.0.nupkg.sha512",
+    "/home/boss/.nuget/packages/microsoft-windowsapicodepack-core/1.1.4/microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+    "/home/boss/.nuget/packages/microsoft-windowsapicodepack-shell/1.1.4/microsoft-windowsapicodepack-shell.1.1.4.nupkg.sha512",
+    "/home/boss/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

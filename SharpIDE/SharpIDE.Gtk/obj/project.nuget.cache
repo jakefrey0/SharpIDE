@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "Wj8f60lKSpZ4uKkVCJcFKKCIFgdPkGruYso5vakepQSbnVNmI0PJUM8d9DGXvhP4+JDLKgZepwP0zXw5JktGYw==",
+  "success": true,
+  "projectFilePath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/SharpIDE.Gtk.csproj",
+  "expectedPackageFiles": [
+    "/home/boss/.nuget/packages/atksharp/3.24.24.34/atksharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/cairosharp/3.24.24.34/cairosharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/eto.forms/2.7.1/eto.forms.2.7.1.nupkg.sha512",
+    "/home/boss/.nuget/packages/eto.platform.gtk/2.7.1/eto.platform.gtk.2.7.1.nupkg.sha512",
+    "/home/boss/.nuget/packages/gdksharp/3.24.24.34/gdksharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/giosharp/3.24.24.34/giosharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/glibsharp/3.24.24.34/glibsharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/gtksharp/3.24.24.34/gtksharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/pangosharp/3.24.24.34/pangosharp.3.24.24.34.nupkg.sha512",
+    "/home/boss/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

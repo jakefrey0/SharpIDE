@@ -1,0 +1,114 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/SharpIDE.Wpf.csproj": {}
+  },
+  "projects": {
+    "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/SharpIDE.Wpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/SharpIDE.Wpf.csproj",
+        "projectName": "SharpIDE.Wpf",
+        "projectPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/SharpIDE.Wpf.csproj",
+        "packagesPath": "/home/boss/.nuget/packages/",
+        "outputPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Wpf/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/boss/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj": {
+                "projectPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Eto.Platform.Wpf": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.109/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj",
+        "projectName": "SharpIDE",
+        "projectPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj",
+        "packagesPath": "/home/boss/.nuget/packages/",
+        "outputPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/boss/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.109/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

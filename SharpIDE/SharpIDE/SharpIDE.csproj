@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Eto.Forms" Version="2.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="resources.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>resources.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <None Remove="Resources\c-sharp-c.bmp" />
+      <EmbeddedResource Include="Resources\c-sharp-c.bmp" />
+      <None Remove="Resources\file-text-outline.bmp" />
+      <EmbeddedResource Include="Resources\file-text-outline.bmp" />
+      <None Remove="Resources\Folder.bmp" />
+      <EmbeddedResource Include="Resources\Folder.bmp" />
+      <None Remove="Resources\project-diagram-solid.bmp" />
+      <EmbeddedResource Include="Resources\project-diagram-solid.bmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="resources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

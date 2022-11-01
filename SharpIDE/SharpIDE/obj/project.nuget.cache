@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "iBuKqk6Gc9y3SVxq+qxHAzTRNZEZSh2IdeOh2SsXee0AQ1jbJUxwRvTFROBm5yfR/Zn/KwOnwqMKGo7oa9glOQ==",
+  "success": true,
+  "projectFilePath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj",
+  "expectedPackageFiles": [
+    "/home/boss/.nuget/packages/eto.forms/2.7.1/eto.forms.2.7.1.nupkg.sha512",
+    "/home/boss/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/boss/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/home/boss/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/bin/Debug/netstandard2.0/SharpIDE.deps.json
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/bin/Debug/netstandard2.0/SharpIDE.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/bin/Debug/netstandard2.0/SharpIDE.pdb
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.csproj.AssemblyReference.cache
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.GeneratedMSBuildEditorConfig.editorconfig
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.AssemblyInfoInputs.cache
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.AssemblyInfo.cs
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.csproj.CoreCompileInputs.cache
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.pdb
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.resources.resources
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/Debug/netstandard2.0/SharpIDE.csproj.GenerateResource.cache
