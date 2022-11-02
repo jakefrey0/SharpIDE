@@ -11,6 +11,9 @@
         "dependencies": {
           "Eto.Forms": "2.7.1",
           "NETStandard.Library": "2.0.3",
+          "gdk-sharp": "2.12.0.0",
+          "glib-sharp": "2.12.0.0",
+          "gtk-sharp": "2.12.0.0",
           "Scintilla.Eto.Shared": "1.0.0.0"
         },
         "runtime": {
@@ -42,11 +45,51 @@
           }
         }
       },
+      "gdk-sharp/2.12.0.0": {
+        "runtime": {
+          "gdk-sharp.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "glib-sharp/2.12.0.0": {
+        "runtime": {
+          "glib-sharp.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "gtk-sharp/2.12.0.0": {
+        "runtime": {
+          "gtk-sharp.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
       "Scintilla.Eto.Shared/1.0.0.0": {
         "runtime": {
           "Scintilla.Eto.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "pango-sharp/2.12.0.0": {
+        "runtime": {
+          "pango-sharp.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
+          }
+        }
+      },
+      "atk-sharp/2.12.0.0": {
+        "runtime": {
+          "atk-sharp.dll": {
+            "assemblyVersion": "2.12.0.0",
+            "fileVersion": "2.12.0.0"
           }
         }
       }
@@ -86,7 +129,32 @@
       "path": "system.componentmodel.annotations/5.0.0",
       "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
     },
+    "gdk-sharp/2.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "glib-sharp/2.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "gtk-sharp/2.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Scintilla.Eto.Shared/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "pango-sharp/2.12.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "atk-sharp/2.12.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

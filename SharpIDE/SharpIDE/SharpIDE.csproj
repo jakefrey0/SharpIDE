@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -32,6 +32,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Reference Include="gdk-sharp">
+        <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\Libraries\gdk-sharp.dll</HintPath>
+      </Reference>
+      <Reference Include="glib-sharp">
+        <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\Libraries\glib-sharp.dll</HintPath>
+      </Reference>
+      <Reference Include="gtk-sharp">
+        <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\Libraries\gtk-sharp.dll</HintPath>
+      </Reference>
       <Reference Include="Scintilla.Eto.Shared">
         <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\bin\Debug\Scintilla.Eto.Shared.dll</HintPath>
       </Reference>

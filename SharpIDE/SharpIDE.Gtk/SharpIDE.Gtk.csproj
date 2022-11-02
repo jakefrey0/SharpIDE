@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net461</TargetFramework>
+        <TargetFramework>net462</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -10,25 +10,22 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Eto.Platform.Gtk" Version="2.7.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Update="libscintilla.so">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Reference Include="Eto.Gtk2">
-        <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\bin\Debug\Eto.Gtk2.dll</HintPath>
-      </Reference>
       <Reference Include="Scintilla.Eto.GTK">
         <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\bin\Debug\Scintilla.Eto.GTK.dll</HintPath>
       </Reference>
       <Reference Include="Scintilla.Eto.Shared">
         <HintPath>..\..\..\..\Downloads\ScintillaEto-9c1b833c195a5a4a3f6e2714731412af1b41e54b\Scintilla.Eto.GTK\bin\Debug\Scintilla.Eto.Shared.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eto.Platform.Gtk2" Version="2.7.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="libscintilla.so">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

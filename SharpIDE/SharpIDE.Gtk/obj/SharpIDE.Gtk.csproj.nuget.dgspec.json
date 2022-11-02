@@ -17,14 +17,14 @@
           "/home/boss/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net461"
+          "net462"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net461": {
-            "targetAlias": "net461",
+          "net462": {
+            "targetAlias": "net462",
             "projectReferences": {
               "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj": {
                 "projectPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/SharpIDE.csproj"
@@ -39,12 +39,12 @@
         }
       },
       "frameworks": {
-        "net461": {
-          "targetAlias": "net461",
+        "net462": {
+          "targetAlias": "net462",
           "dependencies": {
-            "Eto.Platform.Gtk": {
+            "Eto.Platform.Gtk2": {
               "target": "Package",
-              "version": "[2.7.1, )"
+              "version": "[2.7.2, )"
             }
           },
           "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.109/RuntimeIdentifierGraph.json"
@@ -60,16 +60,22 @@
         "packagesPath": "/home/boss/.nuget/packages/",
         "outputPath": "/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE/obj/",
         "projectStyle": "PackageReference",
+        "crossTargeting": true,
         "configFilePaths": [
           "/home/boss/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
+          "net461",
           "netstandard2.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          },
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {}
@@ -82,6 +88,16 @@
         }
       },
       "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.7.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.109/RuntimeIdentifierGraph.json"
+        },
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {

@@ -7,15 +7,7 @@
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/SharpIDE.Gtk.exe.config
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/SharpIDE.Gtk.exe
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/SharpIDE.Gtk.pdb
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/AtkSharp.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/CairoSharp.dll
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Eto.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Eto.Gtk.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/GdkSharp.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/GioSharp.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/GLibSharp.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/GtkSharp.dll
-/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/PangoSharp.dll
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/System.ComponentModel.Annotations.dll
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Microsoft.Win32.Primitives.dll
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/netstandard.dll
@@ -120,3 +112,5 @@
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.GTK.dll
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.GTK.pdb
 /home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/libscintilla.so
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Eto.Gtk2.dll
+/home/boss/RiderProjects/SharpIDE/SharpIDE/SharpIDE.Gtk/bin/Debug/net461/Scintilla.Eto.Shared.pdb
